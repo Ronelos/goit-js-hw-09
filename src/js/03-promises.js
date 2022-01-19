@@ -27,21 +27,6 @@ function onButtonCreate(event) {
       delay += step;
     }   
   }
-
-  //Через цикл и массив:
-  // let array = [];
-
-
-  // for (let i = 0; i < amount; i += 1) {
-  //   array.push(delay + i * step);
-  // }
-
-  // const promises = array.map((value, index) => {
-  //   createPromise(index + 1, value)
-  //     .then(({i, delay}) => Notiflix.Notify.success(`Fulfilled promise ${index + 1} in ${value}ms`))
-  //     .catch(({i, delay}) => Notiflix.Notify.failure(`Rejected promise ${index + 1} in ${value}ms`))
-  // })
-// }
  
 
 function createPromise(position, delay) {
