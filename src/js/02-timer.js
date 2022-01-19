@@ -79,3 +79,8 @@ function stopTimer(daysTitle,hoursTitle,minutesTitle,secondsTitle,timerId){
         clearTimeout(timerId);
     };
 }
+
+
+
+
+  
