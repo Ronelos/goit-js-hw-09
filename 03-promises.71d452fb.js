@@ -5,4 +5,4 @@ var t,e=arguments[3];!function(e,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"GyVV":[function(require,module,exports) {
 "use strict";var e=t(require("notiflix"));function t(e){return e&&e.__esModule?e:{default:e}}const n=document.querySelector(".form");function r(t){t.preventDefault();let n=+t.currentTarget.elements.delay.value,r=+t.currentTarget.elements.step.value;const l=+t.currentTarget.elements.amount.value;if(n<0||r<0||l<0)e.default.Notify.warning("Error! Values must be >= 0");else for(let o=1;o<=l;o+=1)i(o,n).then(({position:t,delay:n})=>{e.default.Notify.success(`Fulfilled promise ${t} in ${n}ms`)}).catch(({position:t,delay:n})=>{e.default.Notify.failure(`Rejected promise ${t} in ${n}ms`)}),n+=r}function i(e,t){return new Promise((n,r)=>{setInterval(()=>{Math.random()>.3?n({position:e,delay:t}):r({position:e,delay:t})},t)})}n.addEventListener("submit",r);
 },{"notiflix":"hWOm"}]},{},["GyVV"], null)
-//# sourceMappingURL=/goit-js-hw-09/03-promises.67140937.js.map
+//# sourceMappingURL=/goit-js-hw-09/03-promises.71d452fb.js.map
